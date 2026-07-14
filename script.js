@@ -191,6 +191,7 @@ const loadUserDashboard = () => {
   renderPlanner();
   updateStatsUI(); 
   updatePomoCycleUI();
+  initWeather();
 };
 
 // Logout Functionality
@@ -537,8 +538,6 @@ const initWeather = () => {
     fetchWeather(23.2517, 77.4667);
   }
 };
-
-initWeather();
 
 // Update in the background every 30 minutes
 setInterval(initWeather, 30 * 60 * 1000);
